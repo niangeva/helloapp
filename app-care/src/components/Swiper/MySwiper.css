@@ -1,0 +1,96 @@
+/* Slide, Swiper in Home Page*/
+#news-carousel .swiper-container{
+    width: 320px;
+}
+#news-carousel .swiper-container .post-thumbnail img{
+    box-shadow: 0 4px 4px 0 rgba(121, 120, 120, 0.2);
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 400px){
+
+    #news-carousel .swiper-container{
+      width: 400px;
+   }
+
+   #news-carousel .swiper-container .post-thumbnail img{
+    width: 400px !important;
+    height: 300px !important;
+    font-size: 2.5em;
+    color: white;
+    object-fit: cover;
+}
+}
+  
+  @media screen and (min-width: 600px){
+  
+    #news-carousel .swiper-container{
+      width: 600px !important;
+   }
+
+   #news-carousel .swiper-container .post-thumbnail img{
+    width: 600px !important;
+    height: 400px !important;
+    font-size: 2.5em;
+    color: white;
+    object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 800px){
+  
+    #news-carousel .swiper-container{
+      width: 800px !important;
+   }
+
+   #news-carousel .swiper-container .post-thumbnail img{
+    width: 800px !important;
+    height: 500px !important;
+    font-size: 2.5em;
+    color: white;
+    object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 1080px){
+  
+    #news-carousel .swiper-container{
+      width: 1080px !important;
+   }
+
+   #news-carousel .swiper-container .post-thumbnail img{
+    width: 1080px !important;
+    height: 500px !important;
+    font-size: 2.5em;
+    color: white;
+    object-fit: cover;
+    }
+}
+
+.swiper-pagination{
+    bottom: 0;
+    padding-bottom: 10px;
+}
+
+.swiper-wrapper{
+    padding-inline-start: 0;
+}
+
+.recettes-content .swiper-container{
+    width: 100%;
+    }
+
+.swiper-button-prev, .swiper-button-next{
+    color: var(--swiper-navigation-color,#555656);
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--swiper-pagination-color,#555656);
+}

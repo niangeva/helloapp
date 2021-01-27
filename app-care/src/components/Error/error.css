@@ -1,0 +1,20 @@
+/* Error Page */
+.PageError{
+padding: 50px 0 40px;
+margin: 0 auto;
+display: block;
+}
+
+.PageError h2{
+    font-family: Josefin;
+    color: #b84646;
+    font-size: 14px;
+    text-align: center;
+}
+
+.PageError img{
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+    margin: 40px auto;
+}

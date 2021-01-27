@@ -1,0 +1,395 @@
+/* Home page*/
+.home{
+    margin-bottom: 70px;
+}
+
+/* actu*/
+.page-container .home h1{
+  background: #020b21;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: -25px;
+  z-index: 2;
+  position: relative;
+}
+.news-container{
+  position: relative;
+  background-color: #fff;
+  margin-top: 40px;
+}
+.news-content{
+  margin: 0 auto;
+  padding: 0 0 60px;
+}
+.news-bg{
+  background-color: #1d96bc;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+  
+.news-wrap{
+  background: #fff;
+  position: relative;
+  border-bottom-right-radius: 60px;
+}
+.home .post-entry{
+  height: inherit;
+  position: relative;
+}
+.home .post-link{
+  height: 100%;
+}
+.home .post-thumbnail{
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  height: inherit;
+  border-radius: 2px;
+  position: relative;
+}
+
+.home .post-box h2{
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 70%;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  
+.home .post-box h2 a{
+  color: #fff;
+}
+.home .post-box .fa-plus-circle{
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  color: rgb(253, 253, 253);
+  cursor: pointer;
+  padding: 40px 18px 18px;;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: krona;
+  font-weight: 600;
+  letter-spacing: 4px;
+  transition: all 0.5s linear;
+  position: relative;
+  z-index: 2;
+}
+
+.accordion small.box-infos {
+      display: block;
+      font-size: 9px;
+      color: #545353; 
+      letter-spacing: 1px;   
+}
+
+.accordion .accordion-bg{
+  background: center / cover no-repeat url("../../images/pics/shampoo-5046291_1920.jpg") !important;
+  height: 70px;
+  width: 100px;
+  float: right;
+  border-radius: 5% 95% 5% 95% / 77% 21% 79% 23%;
+  -webkit-box-shadow: inset 0px 0px 17px 7px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 0px 0px 17px 7px rgba(0,0,0,0.2);
+  box-shadow: inset 0px 0px 17px 7px rgba(0,0,0,0.2);
+  position: relative;
+  top: -30px;
+}
+.produits-tab .accordion-bg{
+  background-image: url("../../images/pics/flower-3368994.jpg") !important;
+}
+
+.recettes-tab .accordion-bg {
+  background-image: url("../../images/pics/medicinal-flower.jpg") !important;
+}
+
+.routine-tab .accordion-bg {
+  background-image: url("../../images/pics/beauty-2537562.jpg") !important;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+ .accordion:hover {
+  text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.22), 3px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  padding-bottom: 20px;
+  transition: all 0.5s linear;
+  width: 100%;
+  z-index: 2;
+} 
+
+/*Accordion conseils*/
+.conseils-tab {
+  background: #e28b8b;
+  border-top-left-radius: 60px;
+}
+.conseils-tab .accordion{
+  background: #1d96bc;
+  border-top-left-radius: 60px;
+  position: relative;
+}
+.panel .conseils-content{
+  transition: all 0.5s linear;
+  display: flex;
+}
+
+.conseils-tab .panel{
+  border-bottom-left-radius: 60px;
+}
+
+
+/*Accordion produits*/
+.produits-tab {
+  background: #ffd42e; 
+  border-top-right-radius: 60px;
+}
+.produits-tab .accordion{
+  background: #e28b8b; 
+  border-top-right-radius: 60px;
+}
+.produits-tab .panel {
+  border-bottom-right-radius: 60px;
+}
+
+.produits-tab .produits-box {
+  width: 100% !important;
+}
+
+/*Accordion recettes*/
+.recettes-tab {
+  background: #2a3b63;
+  position: relative;
+  border-top-left-radius: 60px;
+}
+.recettes-tab .accordion{
+  background: #ffd42e;
+  border-top-left-radius: 60px;
+}
+
+.recettes-tab .panel {
+  border-bottom-left-radius: 60px;
+}
+
+/*Accordion routine*/
+.routine-tab .accordion{
+  background: #2a3b63;
+  border-top-right-radius: 60px;
+}
+
+/*Accordion conseils items*/
+.tabcontainer .conseils-content .post-item {
+  color: rgb(56, 56, 56);
+  padding: 5px 15px;
+  width: 100%;
+  text-align: left;
+  font-size: 10px;
+  transition: 0.4s;
+  margin-top: 5px;
+}
+
+.tabcontainer .conseils-content .post-entry {
+  padding: 5px 20px;
+  height: 100%;
+  position: relative;
+  background-color: #F3F3F3;
+}
+@media screen and (min-width: 600px){
+  .tabcontainer .conseils-content .post-item {    
+    color: rgb(56, 56, 56);
+    width: 50% !important;
+    text-align: left;
+    font-size: 10px;
+    transition: 0.4s;
+    margin-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .tabcontainer .conseils-content .post-entry {
+    padding: 5px 25px;
+  }
+}
+
+
+.tabcontainer .conseils-content .post-item a {
+  color: rgb(56, 56, 56);
+}
+  
+.tabcontainer .conseils-content .post-item h2 {
+  float: left;
+  margin: 0;
+}
+
+.tabcontainer .conseils-content .post-item .post-plus {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+}
+a.readmore {
+  color: white !important;
+  border-radius: 20px;
+  display: block;
+  font-size: 12px;
+  line-height: normal;
+  font-stretch: normal;
+  letter-spacing: 4px;
+  padding: 10px 0px;
+  width: 200px;
+  margin: 10px auto;
+  text-align: center;
+  top: 5px;
+  transition: all 0.25s ease-out 0s;
+  -webkit-transition: all .25 ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  cursor: pointer;
+  position: relative;
+  clear: both;
+}
+
+/*Accordion readmore*/
+.conseils-tab a.readmore{
+  background-color: #187390;
+}
+
+.recettes-tab a.readmore{
+  background-color: #cfab1e;
+}
+
+.routine-tab a.readmore{
+  background-color: #1d2945;
+}
+
+.produits-tab a.readmore{
+  background-color: #bc7676;
+}
+
+/*Accordion routine content*/
+.tabRoutine-content{
+  display:flex;
+}
+.rtab-box {
+  width: 50%;
+  margin: 10px;
+}
+  
+.rtab-box:first-child{
+margin-right: 0;
+}
+.rtab-box-content{
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  min-height: 150px;
+  max-height: 150px;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+}
+  
+.rtab-box-content h2{
+  font-size: 14px;
+  font-weight: 600;
+}
+  
+/*Accordion recettes content*/
+.recettes-tab .recettes-content{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+  
+.recettes-tab .recette-image img {
+  object-fit: cover !important;
+  min-height: 160px;
+  max-height: 160px;
+  width: 160px;
+  max-width: 160px;
+  position: relative;
+  margin: 0;
+  padding-bottom: 0;
+  box-shadow: 0px 24px 22px -45px rgba(0,0,0,0.75), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 4px 4px 0 rgba(121, 120, 120, 0.2);
+  visibility: hidden;
+}
+
+.recettes-tab .recette-box .post-cover {
+  border-top-left-radius: 0 ;
+  border-bottom-right-radius: 0;border-radius: 20%;
+}
+.recette-image{
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat;
+  border-radius: 20%;
+}
+
+
+.recettes-tab .recette-box h2 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-20%, -50%);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.recettes-tab .recette-thumbnail {
+  min-height: 160px;
+  max-height: 160px;
+}
+.recettes-tab .plus-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+}
+@media screen and (min-width: 600px){
+  .recettes-tab .recette-thumbnail {
+      min-height: 260px;
+      max-height: 260px;
+  }
+
+  .recettes-tab .recette-box h2 {
+      font-size: 16px;
+  }
+}
+
+@media screen and (min-width:800px){
+  .recettes-tab .recette-thumbnail {
+      min-height: 300px;
+      max-height: 300px;
+  }
+}

@@ -1,0 +1,300 @@
+/*user Page*/
+.user{
+    min-height: 100%;
+}
+
+.user-page{
+    margin-bottom: 60px;
+    padding: 20px 0;
+}
+
+.single-user-page-container{
+    min-height: 100vh;
+}
+
+ /*Iser Page Header*/
+.user .header-content h1 {
+    font-size: 18px;
+    position: absolute;
+    top: 60px;
+}
+
+
+
+/* user profile*/
+
+.user-profile {
+    width:50px;
+    height: 50px;
+   position: absolute;
+   right: 50px;
+    top: 60px   
+}
+
+.user-profile img{
+    max-width: 100%;
+    border-radius: 100px;
+}
+
+ /* Log out btn*/
+ .user .logout-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    align-items: center
+}
+.user .logout-btn .icon-lgout{
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 14px;
+    padding: 10px;
+    float: left;
+}
+
+.user .logout-btn .icon-lgout svg{
+    width: 15px;
+    height: 15px;
+}
+
+/* bottom*/
+.user-bottom{
+    border-top: 1px solid rgb(212, 217, 223);
+}
+
+.user-bottom ul{
+    list-style: none;
+    padding: 10px 0; 
+    text-align: center;
+}
+.user-bottom ul li {
+    padding: 10px 0 10px;
+    background: #eaeaef;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.user-bottom a{
+    color: rgb(92, 92, 92) !important;
+}
+
+/* user page boxes*/
+.user-boxes {
+    
+    margin-bottom: 20px;
+    
+ }  
+ 
+.user-boxes ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+.user-boxes ul li button{
+    width: 150px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    -webkit-appearance: button;
+    box-shadow: 0 4px 4px 0 rgba(121, 120, 120, 0.2);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.user-boxes ul li button svg{
+ 
+    margin-right: 5px;
+}
+
+.user-boxes button{
+    color: white !important;
+}
+
+
+.slide-exit .page {
+z-index: 1;
+}
+
+
+/* Transitions*/
+.left.slide-enter  .page {
+transform: translate3d(100%, 0, 0);
+}
+.left.slide-enter  .page {
+transform: translate3d(100%, 0, 0);
+}
+.right.slide-enter  .page {
+transform: translate3d(-100%, 0, 0);
+}
+
+.left.slide-exit  .page {
+transform: translate3d(-100%, 0, 0);
+}
+
+.right.slide-exit  .page {
+transform: translate3d(100%, 0, 0);
+}
+
+.slide-enter.slide-enter-active  .page {
+transform: translate3d(0, 0, 0);
+transition: all 800ms ease-in-out;
+}
+
+
+/*profil*/
+
+.prfl-btn button, .profile .user-page-title {
+    background-color: rgb(126, 126, 126);
+}
+
+.prfl-btn button svg{
+    height: 16px;
+    width: 16px;
+}
+/*compte*/
+
+.cpte-btn button {
+    background-color: rgb(164, 73, 158);
+}
+
+
+/*notifications*/
+
+.not-btn button, .notifications .user-page-title {
+    background-color: rgb(132, 62, 92);
+}
+/*agenda*/
+
+.cld-btn button, .agenda .user-page-title {
+    background-color: rgb(60, 137, 209);
+}
+/*challenge*/
+
+.chlg-btn button, .challenge .user-page-title {
+    background-color:rgb(72, 173, 183);
+}
+
+/*mesure*/
+
+.msr-btn button,.mesures .user-page-title {
+    background-color: rgb(230, 59, 110);
+}
+
+/*routine*/
+
+.rtn-btn button, .routine .user-page-title {
+    background-color: rgb(90, 92, 217);
+}
+
+/*commandes*/
+
+.cmd-btn button, .commandes .user-page-title {
+    background-color:rgb(153, 131, 11);
+}
+
+/*photos*/
+
+.pic-btn button, .album .user-page-title {
+    background-color: #e1ac2d;
+}
+/* produits*/
+
+.pdts-btn button, .mesproduits .user-page-title {
+    background-color:rgb(78, 179, 41);
+}
+
+
+/* favoris*/
+
+.fav-btn button, .favoris .user-page-title {
+    background-color:rgb(198, 65, 65);
+}
+
+/*Evolution*/
+.evl-btn button, .evolution .user-page-title {
+    background-color: rgb(255 121 35);
+}
+
+.img-evolution {
+    max-height: 400px;
+}
+
+.img-evolution img {
+    object-fit: cover;
+    width: 100%;
+}
+/* and so */
+  
+.single-user-page-container{
+    height: 100%;
+    background: #ffffff;
+    z-index: 900;
+    padding-bottom: 60px;
+}
+
+
+
+.user-main{
+    background: #f0f0f0ee;
+    min-height: 100vh;
+}
+
+
+.user-page-title{
+    margin: 0;
+    min-height: 50px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+     background: linear-gradient(90deg, rgb(164 161 162 / 0.4) 0%, rgb(132 130 131 / 0.4) 37%, rgb(157 154 155 / 0.4) 100%);
+    padding-top: 10px;
+    color: #ffff;
+}
+.user-page-title h1{
+    font-size: 18px;
+    font-family: GOTHICB;
+    text-align: center;
+    margin: 0;
+}
+.user .back{
+    width: 10%;
+    top: 20px;
+}
+.user .backLink{
+    float: left;
+    font-size: 3px;
+    width: 10px;
+}
+.user #Calque_20{
+height: 20px;
+}
+
+.user svg#Calque_20  path{
+    fill: white;
+}
+.user-page-content {
+    height: 100%;
+}
+
+
+/*Evolution*/
+
+
+
+
+
+
+
+

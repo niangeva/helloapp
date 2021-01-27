@@ -1,7 +1,150 @@
-.App {
-  text-align: center;
+html {
+	padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
+body, html {
+    height: 100%;
+  }
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Gothic, Lucida Grande, arial, helvetica,  verdana, Sans-serif !important;
+	font-size: 14px !important;
+	color: #333 !important;
+  background: #fff;
+  height: 100%;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup,.main, nav, section {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+a:link,
+a:visited {
+	color: rgb(199, 28, 28);
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	text-decoration: none !important;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+p {
+
+	line-height: 1.65em;
+	margin: 0 0 1em 0;
+	font-family:  Gothic;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+textarea{font-family: Gothic, Lucida Grande, arial, helvetica, verdana, Sans-serif !important;}
+
+@font-face {
+    font-family: "Amano Regular";
+    font-style: italic;
+    src: url('fonts/AmanoRegular.ttf');
+}
+
+@font-face {
+  font-family: "Amano";
+  font-style: italic;
+  src: url('fonts/AMANO___.TTF');
+}
+
+
+@font-face {
+    font-family: "Gobold";
+    font-style: italic;
+    src: url('fonts/Gobold Blocky Regular.otf');
+}
+
+
+
+@font-face {
+    font-family: "Gloria";
+    font-style: italic;
+    src: url('fonts/GloriaHallelujah.ttf');
+
+}
+
+@font-face {
+    font-family: "Josefin";
+    font-style: italic;
+    src: url('fonts/JosefinSans-Bold.ttf');
+
+}
+
+@font-face {
+    font-family: "Krona";
+    font-style: italic;
+    src: url('fonts/KronaOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Gothic";
+    font-style: italic;
+    src: url('fonts/GOTHIC.TTF');
+}
+
+@font-face {
+    font-family: "GothicB";
+    font-style: italic;
+    src: url('fonts/GOTHICB.TTF');
+}
+
+@font-face {
+  font-family: "GothicBi";
+  font-style: italic;
+  src: url('fonts/GOTHICBI.TTF');
+}
+
+@font-face {
+  font-family: "Gothici";
+  font-style: italic;
+  src: url('fonts/GOTHICBI.TTF');
+}
+
+/* Clearfix */
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/*Page*/
+
+#root{
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+}
+.App-container{
+  height: 100%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,26 +156,217 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Page Index
+****************/
+.page-wrap {
+	max-width: 100%;
+	margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+}
+.page-container{
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+ /* Page content*********
+  ********************** */
+
+  .wrapper{
+    height: 100%;
+  }
+ 
+  .content {
+    padding: 16px;
+  }
+  .article-container{
+    margin-bottom: 60px;
+  }
+
+  .fade-enter {
+    opacity: 0;
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear 150ms;
+  }
+  .fade-exit {
+    opacity: 1;
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms linear 150ms;
+  }
+  
+
+  
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  max-width: 1080px;
+  margin: 0 auto;
+  transition: margin-left .5s;
+}
+
+
+
+
+/*single articles 
+******************/
+
+
+.wrap-article{
+  background-color: rgba(243, 243, 243, 0.4);
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (min-width:600px){
+  
+  .wrap-article{
+      padding: 60px 80px 80px;
+  }
+}
+.wrap-article .post-title h1{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Krona, arial, helvetica,  verdana, Sans-serif;;
+}
+.wrap-article .post-content{
+  background: white;
+  padding: 15px;
+  position: relative;
+}
+
+.wrap-article p{
+  text-align: justify;
+}
+.wrap-article .post-image {
+  background-size: cover !important;
+background-repeat: no-repeat !important;
+background-position: center !important;
+position: relative;
+}
+.wrap-article .post-image img{
+  max-width: 100%;
+  max-height: 250px;
+  visibility: hidden;
+}
+
+.wrap-article .back {
+  position: fixed;
+  z-index: 2;
+  top: 10px;
+}
+.post-meta {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 30px;
+}
+.post-meta div{
+  width: 50%;
+}
+.post-meta .cat{
+ text-align: right;
+}
+.post-meta .cat a{
+  border: 2px solid #333;
+  padding: 5px;
+  border-radius: 20px;
+  color: #333;
 }
 
-.App-link {
-  color: #61dafb;
+.like-btn{
+  float: right;
+  bottom: 30px;
+  position: absolute;
+  right: 30px;
+  color: #eee;
+  font-size: 30px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.like-btn:hover, .like-btn:active{
+  color: #A80E50;
+}
+.wrap-article #Calque_20 {
+  height: 20px;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} 
+
+.article-container{
+  margin-bottom: 60px;
+}
+
+
+ .slide-exit .page {
+    z-index: 1;
   }
-  to {
-    transform: rotate(360deg);
+  
+ 
+  /* Transitions*/
+  .left{
+    height: 100%;
   }
+  .left.slide-enter  .page {
+    transform: translate3d(100%, 0, 0);
+  }
+  .left.slide-enter  .page {
+    transform: translate3d(100%, 0, 0);
+  }
+  .right.slide-enter  .page {
+    transform: translate3d(-100%, 0, 0);
+  }
+  
+  .left.slide-exit  .page {
+    transform: translate3d(-100%, 0, 0);
+  }
+  
+  .right.slide-exit  .page {
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  .slide-enter.slide-enter-active  .page {
+    transform: translate3d(0, 0, 0);
+    transition: all 800ms ease-in-out;
+  }
+
+
+.App-main{
+  height: 100%;
 }

@@ -1,0 +1,133 @@
+
+/* Style the navbar barre avec menu et retour Toolbar.css
+*********************************************/ 
+
+  
+  /* Go back btn */
+  .arrow-back{
+    z-index: 2;
+    color: rgb(165, 164, 164);
+    padding: 5px;
+  }
+  .BackBtn{
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index:150;
+  }
+
+  /*Toolbar */
+.toolbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    z-index: 120;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.toolbar-nav{
+display: flex;
+align-items: center;
+height: 100%;
+} 
+
+
+.nav-bg {
+    background-color: rgba(255, 255, 255, 1);
+    background: linear-gradient(333deg, rgba(253,251,254,1) 0%, rgba(238,232,239,1) 100%);
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    transition: top 0.3s ease-out;
+    height: 50px;
+    z-index: 1;
+    box-shadow: none;
+  }
+
+.nav-bg h1{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Krona, arial, helvetica, verdana, Sans-serif;
+    font-size: 12px;
+}
+
+.nav-bg-active{
+    top: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.toolbar-active .nav-bg-active{
+    background: transparent !important;
+    box-shadow: none;
+}
+
+/*Logo*/
+.toolbar-logo {
+  margin-left: 1rem;
+  margin-top: -0.5rem;
+  z-index: 2;
+  color:rgb(243, 79, 79);
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-family: Amano;
+  font-weight: bold;
+  position: relative;
+}
+.toolbar-logo  strong{
+  color: rgb(56, 62, 66);
+  position: absolute; 
+  top: -9px;
+  left: 34px;
+}
+
+.toolbar-logo span{
+  color: rgb(56, 62, 66) !important;
+  position: relative;
+  margin-left: 12px;
+  font-family: krona;
+font-size: 12px;
+}
+
+.toolbar-active .toolbar-logo{
+  display: none;
+}
+
+
+
+/*Spacer*/
+.spacer{
+    flex: 1;
+}
+
+/*Search Btn*/
+
+.searchBtn{
+  z-index: 2;
+  margin-top: -0.3rem;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+.searchBtn button, .shoplink button{
+  font-size: 1.3rem;
+  color: rgb(56, 62, 66);
+}
+
+.toolbar-active .searchBtn {
+  display: none;
+}
+
+/*Shop Btn*/
+.toolbar-active .shoplink {
+  display: none;
+}
+
+/*Menu Btn*/
+.toggleBtn{
+  position: relative;
+  margin-top: -6px;
+  z-index: 2;
+}

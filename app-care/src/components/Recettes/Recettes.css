@@ -1,0 +1,122 @@
+/* recettes*******
+  ********************/
+  .recettes-content{
+    margin: 20px 0 60px;
+  }
+  .recipe-container{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  
+   
+  .recipe-cat {
+    margin-bottom: 40px;
+  }
+  
+  .recipe-cat:last-child {
+    margin-bottom: 20px;
+  }
+  
+  .recipe-cat  h1{
+    font-size: 20px;
+    font-weight: bold; 
+    font-family: "GOTHICB";
+    text-align: center;
+  }
+  
+.recette-box{
+    padding-bottom:0 ;
+    position: relative;border-radius: 20%;
+    margin-right: 10px;
+  }
+ 
+
+.recette-thumbnail{
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    min-height: 150px;
+max-height: 150px;
+    width: 200px;
+    max-width: 200px;
+    position: relative;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 0;
+    padding-bottom:0 ;
+ }
+
+ .recette-thumbnail img{
+    object-fit: cover !important;
+    min-height: 150px;
+max-height: 150px;
+    width: 200px;
+    max-width: 200px;
+    position: relative;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 0;
+    padding-bottom:0 ;
+    box-shadow: 0px 24px 22px -45px rgba(0,0,0,0.75), 0 6px 6px rgba(0,0,0,0.23);
+box-shadow: 0 4px 4px 0 rgba(121, 120, 120, 0.2);
+ }
+
+
+ .recette-box a{
+    transition: all 0.5s ease-in-out;
+}
+
+.page-recettes .recette-box h2.recette-title{
+  color: #fff;
+  font-weight: bold;
+  font-family: Franklin Gothic, gothic, krona;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-size: 15px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+.recette-box .markit{
+  position: absolute;
+  width: 100px;
+  bottom: 10px;
+  text-align: center;
+}
+
+.recette-box h2 a{
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+.recette-box h2 a:hover, .recette-box h2 a:active{
+    color: #A80E50;
+    transition: all 0.5s ease-in-out;
+}
+.recette-box .post-cover{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+   
+}
+
+.post-cover{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(162, 156, 156, 0.4);
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.recette-box:hover .post-cover,  .recette-box:active .post-cover{
+    background: transparent;
+  }
+ 
+.recette-box i{
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-size: 10px;
+}
+

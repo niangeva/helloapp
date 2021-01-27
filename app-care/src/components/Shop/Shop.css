@@ -1,0 +1,25 @@
+/*Shop Page*/
+.Shop{
+    position: absolute;
+    z-index: 200;
+    height: 100%;
+    background: white;
+    width: 100%;
+}
+
+.Shop h1{
+    font-size: 1em;
+}
+
+.Shop .back{
+    float: left;
+font-size: 3px;
+width: 10px;
+padding-left: 10px;
+}
+
+.shop-page header{
+    position: fixed;
+    width: 100%;
+    top: 10px;
+}

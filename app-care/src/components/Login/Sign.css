@@ -1,0 +1,412 @@
+/* Page sign
+****************/
+#mySigninForm{
+    display: block;
+}
+  
+#mySignupForm{
+  display: none;
+}
+.signPage{
+  background-image: linear-gradient(to top, rgba(250, 250, 250, 0), rgba(44, 38, 38, 0.59));
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.signPage-bg{
+  background-image: url("../../images/home-bg.jpg") ;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  filter: blur(0.6em);
+}
+.signContent{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 300px;
+  width: 100%;
+}
+.signform{
+  position: relative;
+  height: 100%;
+  height: 100%;
+}
+
+.signPage-btn{
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 20px 0;
+  width: 100%;
+}
+.signPage .signin-btn a {
+  color: #fff;
+}
+.signup-btn, .signin-btn{
+  color: #fff;
+}
+.signPage-btn .signin-btn, .signPage-btn .signup-btn{
+width: 100px;
+height: 30px;
+box-sizing:border-box;
+border-radius: 20px;
+  -webkit-appearance: button;
+  font-size: 12px;
+}
+
+.redirect-signin{
+  margin-top: 10px;
+}
+
+.flouAR{
+  background-color: rgba(250, 250, 250, 0.5) ;
+  height: 100%;
+  width: 100%;
+}
+
+ /* Forms*/
+.sign-formgroup {
+  margin: 10px auto auto;
+  display: block;
+  text-align: center;
+  width: 90%;
+  font-size: 12px;
+}
+.sign-box{
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  text-align: left;
+  position: relative;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.signPage .form-group {
+  margin: 10px 0;
+  position: relative;
+  background: none 10px/16px 16px no-repeat;
+}
+
+.form-group .form-control{
+  width: 100%;
+  padding: 10px;
+  padding-left: 35px;
+  font-size: 14px;
+  position: relative;
+  display: block;
+  line-height: 1.42857143;
+  color: #555;
+  background: rgba(56, 56, 56, 0.03);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/* Form Title*/
+.form-title{
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.form-title h1{
+  color: #fff;
+  font-family: krona;
+  font-size: 14px;
+}
+/* Page sign in**/
+.signin-btn.active{
+  background-color: #925BB5;
+  cursor: auto;
+}
+
+/* Page sign up**/
+.signup-btn.active{
+  background-color: #A80E50;
+  cursor: auto;
+}
+
+.signPage  .form-group  .select .form-control{
+  padding-left: 10px;
+}
+.signPage  .form-group.firstName, .form-group.lastName, .form-group.username{
+  background-image: url("../../images/icons/profile.svg");
+}
+
+.signPage .form-group .is-hidden{
+  visibility: hidden;
+}
+
+.signPage .form-group.email{
+    background-image: url("../../images/icons/at-solid.svg");
+   
+}
+.signPage .form-group.password{
+  background-image: url("../../images/icons/cadanas-black.svg");
+  
+}
+.signPage .form-group.confirmPassword{
+  background-image: url("../../images/icons/cadanas-black.svg");  
+}
+
+/* Icons*/
+.signPage .form-group svg{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+transform: translateY(-50%);
+}
+.signPage .form-group svg path{
+  fill: #4f4f4f;
+}
+
+.signPage .form-group input:before {
+  background: center / cover no-repeat url("../../images/icons/profile.svg") !important;
+}
+
+
+.hidePW{
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  color: #716e6e;
+  font-size: 14px;
+  cursor: pointer;
+}
+.terms-box{
+display: flex;
+flex-wrap: wrap;
+}
+ /* Buttom / Submit*/
+
+ .signPage .submit{
+  text-transform: uppercase;
+  height: 40px;
+  width: 100%;
+  max-width: 400px;
+  cursor: pointer;
+  border: none;
+  outline:none;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+  position: relative;
+  font-size: 12px;
+}
+
+.signPage .submit svg{
+  width: 15px;
+  height: 15px;
+  margin-right: 4px;
+  position: absolute;
+  
+}
+
+#signin-form .submit svg{
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.sign-formgroup .submit svg path{
+  fill: rgb(241, 241, 241);
+}
+#signup-form .button {
+  height: 40px;
+  width: 120px;
+  color: #fff;
+  position: relative;
+  font-size: 12px;
+}
+
+#signin-form .submit{
+  background-color: #925BB5;
+  background-image: linear-gradient(to top, rgba(61, 33, 74, 0), rgba(75, 31, 113, 0.59));
+  margin-bottom: 20px;
+}
+#signup-form .submit.goNextStep{
+  background-color: #A80E50;
+  background-image: linear-gradient(to top, rgba(61, 33, 74, 0), rgba(113, 6, 31, 0.59));
+}
+#signup-form .submit.goPrevStep{
+  background-color:rgb(35, 39, 41);
+  background-image: linear-gradient(to top, rgba(61, 33, 74, 0),rgb(52, 57, 60));
+  margin-right: 10px;
+}
+
+#signup-form .submit.goNextStep svg{
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+#signup-form .submit.goPrevStep svg{
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+#signup-form .submit:disabled {
+  background: rgba(56, 56, 56, 0.03);
+  cursor: not-allowed;
+}
+.mdpnew{
+  display: block;
+margin: 0 auto;
+text-align: center;
+}
+.mdpnew button{
+  color: #925BB5;
+}
+
+
+/*File*/
+
+.fileContent{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chooseImg{
+  background-color: rgba(56, 56, 56, 0.8);
+  padding: 10px;
+}
+
+.chooseImgInfo{
+padding-left: 10px;
+}
+
+/* The popup form - hidden by default */
+.signPage .form-popup {
+display: none;
+position: absolute;
+top: 50%;
+right: 50%;
+-ms-transform: translate(50%, 50%);
+transform: translate(50%, -50%);
+border-radius: 20px;
+z-index: 9;
+box-shadow: inset -1px 3px 8px 5px #E8ECF1, 2px 5px 16px 0px #7C7D7E, 0px -7px 10px -2px rgba(0,0,0,0);
+transition: .5s;
+}
+
+/* Add styles to the form container */
+.signPage .form-container {
+max-width: 300px;
+padding: 10px;
+background-color: white;
+border-radius: 20px;
+}
+
+/* Full-width input fields */
+.signPage .form-container input[type=text], .signPage .form-container input[type=password], .signPage .form-container input[type=email] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.signPage .form-container input[type=text]:focus, .signPage .form-container input[type=password]:focus, .signPage .form-container input[type=email]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for the submit/login button */
+.signPage .form-container .btn {
+background-color: #925BB5;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+.signPage .form-container h1 {
+font-size: 14px;
+}
+/* Add a red background color to the cancel button */
+.signPage .form-container .cancel {
+background-color: #A80E50;
+}
+
+/* Add some hover effects to buttons */
+.signPage .form-container .btn:hover, .signPage .open-button:hover {
+opacity: 1;
+}
+
+/* The Modal (background) */
+.signPage .modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.signPage .modal-content {
+background-color: #fefefe;
+margin: 30% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+box-shadow: inset -1px 3px 8px 5px #E8ECF1, 2px 5px 16px 0px #7C7D7E, 0px -7px 10px -2px rgba(0,0,0,0);
+max-width: 300px;
+background-color: white;
+border-radius: 20px;
+}
+
+/* The Close Button */
+.signPage .close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.signPage .close:hover,
+.signPage .close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+} 
+
+.signPage .preview-list{
+  background-color: #ffff;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.signPage .preview-list ul{
+  list-style: none;
+  text-align: left;
+}
+
+.signPage .preview-heading{
+  font-size: 14px;
+  color: #A80E50;
+  font-weight: bold;
+  font-family: 'Krona', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,39 @@
+/*Search*/
+
+.search-page{
+    position: absolute;
+    background: white;
+    width: 100%;
+    z-index: 999;
+    min-height: 100%;
+}
+
+.search-container{
+    background: white;
+    width: 100%;
+    display: flex;
+    padding-right: 15px;
+    position: fixed;
+}
+.search-container button.submitSearch {
+    position: absolute;
+    right: 22px;
+    padding: 0.5rem;
+    top: 7px;
+    font-size: 17px;
+    color: #666;
+    }
+.search-container input{
+    width: 90%;
+    background: rgb(242, 241, 249) none repeat scroll 0% 0%;
+    border: medium none;
+    padding: 0.5rem;
+    margin: 10px 5px 10px 15px;
+    border-radius: 5px;
+}
+
+.search-page .navbar-toggle {
+    
+    position: relative;
+    top: 16px;
+}

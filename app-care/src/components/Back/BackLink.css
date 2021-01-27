@@ -1,0 +1,14 @@
+/*GoBack*/
+
+.backLink svg
+{
+    width: 20px;
+    height: 20px;
+}
+
+.backLink button{
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    color: #ccc;
+}

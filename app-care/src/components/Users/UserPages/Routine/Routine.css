@@ -1,0 +1,247 @@
+/*  Routine.css*/
+
+/* Routine Page Onglets*/
+ul.routine-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.routine-nav li {
+    width: 33.33333%;
+    text-align: center;
+    transition: 350ms ease-out;
+    border-bottom: 4px solid transparent;
+}
+
+.onglets:active, .onglets:focus {
+  border-bottom: 4px solid rgb(168 14 80);
+  background-color: #7373be;
+}
+
+.activeOnglet{
+  border-color:  rgb(168 14 80) !important;
+}
+
+.routineContent{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.active-routineContent{
+    display: block;
+}
+.routine-btn {  
+    padding: 10px;
+}
+
+
+.routine-container{
+    padding: 15px;
+    position: relative;
+}
+/* Creer routine*/
+.routine-container button.addStepBtn, .routine-container button.addNew {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgb(164 161 162 / 70%) 0%, rgb(132 130 131 / 60%) 37%, rgb(157 154 155 / 70%) 100%);
+    background-color: rgb(90, 92, 217);
+    color: #fff;
+    position: fixed;
+    bottom: 70px;
+}
+
+.routine-container button.addNew {
+  margin: 0;
+  min-height: 50px;
+  position: fixed;
+  z-index: 9999;
+  background: linear-gradient(90deg, rgb(164 161 162 / 0.4) 0%, rgb(132 130 131 / 0.4) 37%, rgb(157 154 155 / 0.4) 100%);
+  padding-top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.routine-container button.addNew a {
+    color: #ffffff !important;
+    font-size: 20px;
+}
+.routine-container button.addNew svg {
+    display: inline;
+}
+.Routine .App-top, .NewRoutine .App-top, .Step .App-top{
+    display: none;
+}
+.routine-container .todo-container{
+    margin-top: 40px;
+}
+.routine-container .todo{
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 520px;
+    min-height: 600px;
+    background: #161a2b;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+  
+  .todo-form {
+    margin-bottom: 32px;
+  }
+  
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #5d0cff;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #fff;
+  }
+  
+  .todo-input::placeholder {
+    color: #e2e2e2;
+  }
+  
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+  }
+  
+  .todo-input.edit {
+    border: 2px solid #149fff;
+  }
+  
+  .todo-button.edit {
+    background: linear-gradient(
+      90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%
+    );
+    padding: 16px 22px;
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  
+  .todo-row:nth-child(4n + 1) {
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    );
+  }
+  
+  .todo-row:nth-child(4n + 2) {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 12, 241, 1) 0%,
+      rgba(250, 0, 135, 1) 100%
+    );
+  }
+  
+  .todo-row:nth-child(4n + 3) {
+    background: linear-gradient(
+      90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%
+    );
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    margin-right: 5px;
+    color: #fff;
+  }
+  
+  .edit-icon {
+    color: #fff;
+  }
+
+
+  .routine-container .update{
+    top: 1rem;
+    right: 2rem;
+    bottom: 1rem;
+    left: 2rem;
+    position: fixed;
+    background: #fff;
+        background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    display: block;
+    --tw-bg-opacity: 1;
+    background-color: rgba(219,234,254,var(--tw-bg-opacity));
+    z-index: 9999;
+}
+
+.block{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}
+
+.journal-care .icons {
+  display: none;
+}
+
+.journal-care button.addStepBtn {
+  display: none;
+}

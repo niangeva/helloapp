@@ -1,0 +1,119 @@
+/* header ******
+***************/
+.Home .app-header{
+    background: center / cover no-repeat url("../../images/pics/african-woman.jpg");
+    border-radius: 100% 0% 100% 0% / 0% 60% 40% 100%; 
+    text-align: center;
+  }
+  
+.produits .app-header{
+  background: center / cover no-repeat url("../../images/pics/flower-3368994.jpg") ;
+}
+
+.recettes .app-header{
+  background: center / cover no-repeat url("../../images/pics/medicinal-flower.jpg")  !important;
+  border-radius: 100% 0% 90% 0% / 0% 70% 20% 100%;
+}
+
+.conseils .app-header{
+  background: center / cover no-repeat url("../../images/pics/shampoo-5046291_1920.jpg")  !important;
+}
+
+.User .user-page-container .app-header{
+  background: center / cover no-repeat url("../../images/pics/beauty-2537562.jpg") !important ;
+  border-radius: 0% 99% 0% 100% / 0% 0% 100% 35%;
+}
+.User .user-page-container .header-bg{
+  height: 30vh;
+  position: relative;
+  border-radius: 0% 99% 0% 100% / 0% 0% 100% 35%;
+  box-shadow: 0px -6px 10px -7px inset #8d8a8a;
+}
+
+.Shop .app-header{
+  background: center / cover no-repeat url("../../images/pics/beauty-2537562.jpg") !important ;
+  border-radius: 100% 0% 100% 0% / 0% 74% 26% 100%;
+}
+.Shop .header-bg{ 
+  background-color: rgba(214, 198, 198, 0.4);
+  height: 20vh;
+  box-shadow: 0px -6px 10px -7px inset #8d8a8a;
+}
+
+.header-bg{ 
+    background-color: rgb(205 200 200 / 50%);
+    border-radius: 100% 0% 100% 0% / 0% 74% 26% 100%;
+    
+  }
+  .Home .header-bg{ 
+    border-radius: 100% 0% 100% 0% / 0% 60% 40% 100%;
+    box-shadow: 0px -6px 10px -7px inset #8d8a8a;
+    height: 40vh;
+  }
+  .produits .header-bg{ 
+    height: 30vh;
+    border-radius: 0;
+  }
+  .recettes .header-bg{ 
+    border-radius: 100% 0% 90% 0% / 0% 70% 20% 100%;
+    box-shadow: 0px -11px 13px -7px inset #8d8a8a;
+    height: 30vh;
+  }
+  
+  .conseils .header-bg{ 
+    height: 30vh;
+    border-radius: 0;
+  }
+
+  .Agenda .header-bg{ 
+    height: 20vh;
+    border-radius: 0;
+    background-color: rgba(232, 235, 240, 0.5);
+  }
+  .Contact .app-header{
+    border-radius: 0 !important;
+  }
+  .Contact .header-bg {
+    background-color: rgba(226, 214, 240, 0.8);
+    border-radius: 0 !important;
+}
+.Contact .header-content h1 {
+  font-size: 18px;
+  margin-top: -32px !important;
+}
+
+.Contact .header-content {
+  padding: 60px 30px 80px;
+}
+  
+  .header-content{
+    margin : 0 auto;
+    padding: 40px 30px 20px;
+    color: #fff;
+  }
+  .header-content h1{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-family: GOTHICB, Krona;
+    text-transform: uppercase;
+    margin: 30px 0 0;
+  }
+  .header-content .username{
+    color: rgb(237, 127, 30);
+    padding-left: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-family: GOTHICB, Krona;
+    text-transform: uppercase;
+  }
+
+  .User .header-content .username{
+    padding-left: 0;
+    font-size: 18px;
+  }
+  .header-content p{
+    text-align: center;
+  }
